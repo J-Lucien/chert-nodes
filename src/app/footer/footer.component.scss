@@ -41,3 +41,23 @@ footer {
     }
   }
   
+  .figma{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid $dark-gray;
+    border-radius: 10px;
+    align-items: center;
+    margin-bottom: 60px;
+    p{
+        padding-left: 16px;
+        color: $gray;
+    }
+    a{
+
+    }
+}
+
+.copyright{
+  color: $gray;
+  text-align: center;
+}
