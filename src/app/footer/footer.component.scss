@@ -1,0 +1,43 @@
+@import '../../theme.scss';
+
+footer {
+    display: flex;
+    gap: 129px;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    .card-footer {
+      h1 {
+        color: #ffffff;
+        margin: 0;
+        font-size: 24px;
+        font-weight: bold;
+        span {
+          color: $primary;
+        }
+      }
+      p {
+        color: $gray;
+        margin: 0;
+        padding: 8px 0;
+        i {
+          padding-right: 6px;
+        }
+      }
+  
+      .site {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+  
+        a {
+          color: #ffffff;
+          background-color: $primary;
+          border-radius: 22px;
+          padding: 3px 13px;
+          font-size: 18px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  

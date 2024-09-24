@@ -1,0 +1,100 @@
+@import "../../theme";
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 35px;
+    h1 {
+      color: #ffffff;
+      margin: 0;
+      font-size: 24px;
+      font-weight: bold;
+      span {
+        color: $primary;
+      }
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      color: $gray;
+      margin: 0;
+  
+      li {
+        cursor: pointer;
+  
+        &:hover{
+          text-decoration: underline;
+          color: $primary;
+        }
+        a {
+          border: $primary 1px solid;
+          border-radius: 29px;
+          color: $primary;
+          padding: 7px 26px;
+          margin-left: 8px;
+          text-decoration: none;
+          position: relative;
+          &::after {
+            position: absolute;
+            content: url("../../assets/images/Arrow.png");
+          }
+  
+          &:hover {
+            background-color: $primary;
+            color: #ffffff;
+  
+            &::after {
+              filter: brightness(0) invert(1);
+              content: url("../../assets/images/Arrow.png");
+            }
+          }
+        }
+      }
+  
+      .dropdown {
+        position: relative;
+  
+        &::after {
+          position: absolute;
+          content: url("../../assets/images/arrow-bottom.png");
+          padding-left: 8px;
+          padding-right: 32px;
+        }
+        .dropdown-content {
+          position: absolute;
+          // flex-direction: column;
+          display: block;
+          padding: 0;
+          // padding: 6px 16px;
+          // gap: 5px;
+          // border: $dark-gray 1px solid;
+          // width: max-content;
+          // margin-top: 2px;
+          // border-radius: 4px;
+          display: none;
+  
+          div{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            border: #ffffff 1px solid;
+            padding: 0;
+            width: max-content;
+            padding: 6px 16px;
+            border: $dark-gray 1px solid;
+            border-radius: 4px;
+            margin-top: 5px;
+          }
+        }
+  
+        &:hover {
+          .dropdown-content {
+            display: block;
+          }
+        }
+      }
+    }
+  }

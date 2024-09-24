@@ -1,0 +1,260 @@
+@import '../../theme.scss';
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 99px;
+    .section-1 {
+        display: flex;
+        justify-content: space-between;
+        .content {
+          max-width: 434px;
+          h1 {
+            color: #ffffff;
+            font-weight: 800;
+            font-size: 52px;
+            margin-bottom: 28px;
+          }
+          p {
+            color: $gray;
+            margin-bottom: 84px;
+          }
+          a {
+            color: #ffffff;
+            background-color: $primary;
+            border-radius: 29px;
+            padding: 9px 26px;
+            text-decoration: none;
+            text-transform: uppercase;
+            position: relative;
+            &::after {
+              position: absolute;
+              padding-left: 3px;
+              content: url("../../assets/images/arrow-right.png");
+            }
+          }
+        }
+        img {
+          box-sizing: border-box;
+          object-fit: cover;
+          max-width: 100%;
+          filter: drop-shadow(10px 7px 20px $primary);
+        }
+      }
+      
+      .section-2 {
+        max-width: 536px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 76px;
+        .content {
+          h1 {
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            margin-bottom: 13px;
+            font-size: 36px;
+          }
+          p {
+            color: $gray;
+          }
+        }
+      }
+      
+      .section-3 {
+        display: flex;
+        gap: 117px;
+      
+        .content {
+          display: flex;
+          flex-direction: column;
+          max-width: 579px;
+          gap: 29px;
+          .card {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            border: $dark-gray 1px solid;
+            border-radius: 10px;
+            padding: 15px;
+      
+            .card-content {
+              display: flex;
+              flex-direction: column;
+              gap: 14px;
+              h3 {
+                color: #ffffff;
+                margin: 0;
+              }
+      
+              p {
+                color: $gray;
+                margin: 0;
+              }
+            }
+          }
+        }
+      
+        img {
+          object-fit: cover;
+          max-width: 100%;
+      
+          &.right-image {
+            filter: drop-shadow(10px 10px 50px #803030);
+          }
+        }
+      }
+      
+      .section-4 {
+        display: flex;
+        flex-direction: column;
+        gap: 43px;
+      
+        .title {
+          text-align: center;
+          color: #ffffff;
+          margin: 0;
+          padding: 0;
+      
+          span {
+            color: $primary;
+          }
+        }
+      
+        .content {
+          display: flex;
+          gap: 20px;
+          .card {
+            width: 353px;
+            height: min-content;
+            border: $dark-gray 1px solid;
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            p {
+              color: $gray;
+              margin: 0;
+            }
+            h1 {
+              color: #ffffff;
+              margin: 0;
+              font-size: 20px;
+            }
+      
+            a {
+              color: $primary;
+              position: relative;
+              &::after {
+                position: absolute;
+                content: url("../../assets/images/Arrow.png");
+                padding-left: 6px;
+              }
+            }
+          }
+        }
+      }
+      
+      .section-5 {
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+      
+        .title {
+          color: #ffffff;
+          margin: 0;
+          text-align: center;
+          span {
+            color: $primary;
+          }
+        }
+      
+        .content {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 14px;
+          .card {
+            display: flex;
+            flex-direction: column;
+            border: $dark-gray 1px solid;
+            max-width: 264px;
+            flex: auto;
+            padding: 20px;
+            border-radius: 10px;
+            gap: 32px;
+            h1,
+            p {
+              margin: 0;
+            }
+      
+            .card-header {
+              text-align: center;
+              h1 {
+                color: #ffffff;
+                font-size: 28px;
+                margin-bottom: 7px;
+              }
+              p {
+                color: $primary;
+                font-size: 20px;
+                font-weight: 600;
+              }
+            }
+      
+            .card-body {
+              display: flex;
+              justify-content: center;
+              gap: 9px;
+              ul {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                padding: 0;
+                min-width: 180px;
+                gap: 10px;
+                li {
+                  display: flex;
+                  justify-content: space-between;
+                  gap: 9px;
+      
+                  span {
+                    color: $gray;
+                  }
+                }
+      
+                .icon {
+                  display: flex;
+                  gap: 8px;
+                }
+      
+                .value {
+                  font-weight: bold;
+                  color: #ffffff;
+                }
+              }
+            }
+      
+            .card-footer {
+              text-align: center;
+              a {
+                color: $primary;
+                border: $primary 1px solid;
+                border-radius: 29px;
+                padding: 7px 26px;
+                text-decoration: none;
+      
+                &:hover {
+                  background-color: $primary;
+                  color: #ffffff;
+                }
+              }
+            }
+          }
+        }
+      }
+}

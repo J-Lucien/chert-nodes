@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'theme';
+
+body, html {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: max-content;
+    // overflow: hidden;  
+    background-image: url('./assets/images/Home.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .page{
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+        width: $container-width;
+        height: 100%;
+        background-color: rgba($color: $background-color, $alpha: 0.3);
+        border: $background-color 1px solid;
+    }
+}
