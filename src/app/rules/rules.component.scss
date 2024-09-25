@@ -1,0 +1,39 @@
+@import '../../theme.scss';
+
+.rules{
+    display: flex;
+    flex-direction: column;
+    gap: 73px;
+    margin-bottom: 211px;
+    h1{
+        color: #FFFFFF;
+        font-size: 52px;
+        font-weight: 800;
+        margin: 0;
+    }
+    .card{
+        h3{
+            color: #FFFFFF;
+            font-size: 24px;
+            font-weight: 600;
+            margin: 0;
+            margin-bottom: 11px;
+        }
+
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style-position: inside;
+            padding-left: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            color: $gray;
+
+            li{
+                list-style-type: circle;
+            }
+        }
+    }
+}

@@ -1,0 +1,79 @@
+@import '../../theme.scss';
+.login{
+    display: flex;
+    flex-direction: column;
+    gap: 182px;
+    width: 100%;
+    .title{
+        color: #FFFFFF;
+        margin: 0;
+        padding: 0;
+        margin-top: 38px;
+        margin-left: 28px;
+        span{
+            color: $primary;
+        }
+    }
+
+    .login-form{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        gap: 21px;
+        max-width: 273px;
+        h3{
+            color: #FFFFFF;
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .form-control{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            a{
+                color: $primary;
+                max-width: fit-content;
+            }
+
+            input{
+                padding: 8px;
+                background-color: transparent;
+                outline: none;
+                border: none;
+                color: $primary;
+                caret-color: $primary;
+                position: relative;
+                &::placeholder{
+                    font-size: 16px;
+                }
+
+            }
+
+            .input-wrapper{
+                border-radius: 7px;
+                border: $dark-gray 1px solid;
+                display: flex;
+                align-items: center;
+                img{
+                    padding: 10px 0 10px 10px;
+                }
+            }
+        }
+        .button{
+            color: #FFFFFF;
+            background-color: $primary;
+            border-radius: 29px;
+            padding: 7px 26px;
+            max-width: fit-content;
+            margin: 0 auto;
+            cursor: pointer;
+
+        
+        }
+    }
+}

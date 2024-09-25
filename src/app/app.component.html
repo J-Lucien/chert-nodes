@@ -1,9 +1,13 @@
+@if (!isLoginPage()) {
 <div class="page">
 
   <app-header></app-header>
 
-  <app-home></app-home>
+  <router-outlet />
 
   <app-footer></app-footer>
 
 </div>
+} @else if(isLoginPage()) {
+<app-login></app-login>
+}

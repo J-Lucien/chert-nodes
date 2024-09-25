@@ -2,10 +2,10 @@
 @import 'theme';
 
 body, html {
-    display: flex;
-    justify-content: center;
+   
     margin: 0;
     padding: 0;
+    width: 100%;
     height: max-content;
     // overflow: hidden;  
     background-image: url('./assets/images/Home.png');
