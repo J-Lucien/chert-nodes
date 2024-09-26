@@ -1,4 +1,6 @@
-@if (!isLoginPage()) {
+
+<!-- Nav layout component -->
+<!-- @if (!isLoginPage()) {
 <div class="page">
 
   <app-header></app-header>
@@ -8,6 +10,12 @@
   <app-footer></app-footer>
 
 </div>
-} @else if(isLoginPage()) {
-<app-login></app-login>
 }
+@else if (isFullHomePage()) {
+  <app-fullhome></app-fullhome>
+}
+@else if(isLoginPage()) {
+<app-login></app-login>
+} -->
+
+<router-outlet />
